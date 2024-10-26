@@ -6,7 +6,7 @@
             <ul class="navbar-nav">
 
                 <li class="nav-item d-flex align-items-center mx-5">
-                    {{ auth()->user()->name }}
+                    {{ auth()->user()->name . ' : ' . auth()->user()->email }}
                 </li>
 
                 <!-- logout icon -->
