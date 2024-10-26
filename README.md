@@ -25,15 +25,30 @@ Esta app es para la acreditación de la prueba
 
 - php ^8.1
 - composer ^2.2.4 
+- gd php library
 
 ## _instalación_
+
+- create the database: burden_db
+    from command line: `CREATE DATABASE burden_db;`
+- create the database user: burden_db_user
+    from command line: `CREATE USER 'burden_db_user'@'localhost' IDENTIFIED BY 'secret';`
+- give permission to the user created:
+    from command line: `GRANT PRIVILEGE ON burden_db.* TO 'burden_db_user'@'localhost';`
 
 ```
 1. Clona este repositorio con el comando `git clone repo_url`
 2. Corre el comando `composer install`
-3. Copia el archivo `.env.example` a `.env` y actualiza las variables de configuración como la base de datos
-4. Corre `php artisan key:generate` para generar la app key
-5. Corre `php artisan migrate --seed` para generar las migraciones y datos de prueba
+3. Copia el archivo `.env.example` a `.env` 
+4. Actualiza las variables de configuración como la base de datos:
+    - DB_CONNECTION=mysql
+    - DB_HOST=127.0.0.1
+    - DB_PORT=3306
+    - DB_DATABASE=burden_db
+    - DB_USERNAME=burden_db_user
+    - DB_PASSWORD=secret
+5. Corre `php artisan key:generate` para generar la app key
+6. Corre `php artisan migrate --seed` para generar las migraciones y datos de prueba
 ```
 
 ## _login_
