@@ -24,6 +24,8 @@ Route::middleware(['auth'])->group(function () {
     Route::put('/user/update/{user_id}', [ UserController::class, 'update' ])->name('update_user');
     Route::delete('/user/delete/{user_id}', [ UserController::class, 'delete' ])->name('delete_user');
     
+    Route::get('/users_export', [ UserController::class, 'export' ])->name('export_users');
+
     Route::delete('/logout', [ AuthController::class, 'logout' ])->name('logout');
 
 });

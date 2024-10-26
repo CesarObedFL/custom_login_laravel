@@ -10,8 +10,13 @@
         <div class="row">
             <h1 class="text-center"> USERS </h1>
             <br>
-            <div class="row align-items-center p-2 m-3 w-50">
-                <input class="form-control" type="text" v-model="search_query" placeholder="search users by name or email..." />
+            <div class="row gap-2 gap-md-0 p-2 m-3">
+                <div class="col-sm-6 col-md-9 d-grid">
+                    <input class="form-control" type="text" v-model="search_query" placeholder="search users by name or email..." />
+                </div>
+                <div class="col-sm-2 col-md-3 d-grid">
+                    <a href="{{ route('export_users') }}" class="btn btn-block btn-warning">Export Users</a>
+                </div>
             </div>
             <div class="table-responsive">
                 <table class="table table-striped table-bordered">
