@@ -12,10 +12,10 @@ Esta app es para la acreditación de la prueba
     <a href="https://mariadb.org/" target="_blank" rel="noreferrer"> <img src="https://www.vectorlogo.zone/logos/mariadb/mariadb-icon.svg" alt="mariadb" width="40" height="40"/> </a> 
 </p>
 
-- [Laravel] - Laravel 11 como tecnología principal (Backend)
+- [Laravel] - Laravel 11 como tecnología principal Backend
+- [Vue3] - Vue 3 Composition API como tecnología principal Frontend
 - [Bootstrap] - Como framework de diseño responsivo css
 - [Axios] - Como tecnología principal para la comunicación asincrona y hacer peticiones entre en frontend y el backend
-- [Vue3] - Para algunas tablas de las vistas
 - [MariaDB] - Como base de datos relacional
 
 
