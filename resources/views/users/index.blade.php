@@ -15,7 +15,7 @@
                     <input class="form-control" type="text" v-model="search_query" placeholder="search users by name or email..." />
                 </div>
                 <div class="col-sm-2 col-md-3 d-grid">
-                    <a href="{{ route('export_users') }}" class="btn btn-block btn-warning">Export Users</a>
+                    <a href="{{ route('export_users') }}" class="btn btn-block btn-outline-warning">Export Users</a>
                 </div>
             </div>
             <div class="table-responsive">
