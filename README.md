@@ -1,4 +1,4 @@
-# _Prueba Burden_
+# _Prueba Burben_
 
 Esta app es para la acreditación de la prueba
 
@@ -29,14 +29,13 @@ Esta app es para la acreditación de la prueba
 
 ## _instalación_
 
-- create the database: burden_db
-    from command line: `CREATE DATABASE burden_db;`
-- create the database user: burden_db_user
-    from command line: `CREATE USER 'burden_db_user'@'localhost' IDENTIFIED BY 'secret';`
-- give permission to the user created:
-    from command line: `GRANT PRIVILEGE ON burden_db.* TO 'burden_db_user'@'localhost';`
+- Crea la base de datos: burben_db
+    desde la línea de comandos de mariadb: `CREATE DATABASE burben_db;`
+- Crea el usuario de la base de datos: burben_db_user
+    desde la línea de comandos de mariadb: `CREATE USER 'burben_db_user'@'localhost' IDENTIFIED BY 'secret';`
+- Dale permisos al usuario creado en la base de datos:
+    from command line: `GRANT PRIVILEGE ON burben_db.* TO 'burben_db_user'@'localhost';`
 
-```
 1. Clona este repositorio con el comando `git clone repo_url`
 2. Corre el comando `composer install`
 3. Copia el archivo `.env.example` a `.env` 
@@ -44,12 +43,11 @@ Esta app es para la acreditación de la prueba
     - DB_CONNECTION=mysql
     - DB_HOST=127.0.0.1
     - DB_PORT=3306
-    - DB_DATABASE=burden_db
-    - DB_USERNAME=burden_db_user
+    - DB_DATABASE=burben_db
+    - DB_USERNAME=burben_db_user
     - DB_PASSWORD=secret
 5. Corre `php artisan key:generate` para generar la app key
 6. Corre `php artisan migrate --seed` para generar las migraciones y datos de prueba
-```
 
 ## _login_
 
