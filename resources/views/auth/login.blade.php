@@ -14,11 +14,10 @@
                     <div class="card-body">
                         @csrf
 
-                        @error('email') <div class="text-danger">{{ $message }}</div> @enderror
-
                         <div class="mb-3">
                             <label for="email" class="form-label">Email</label>
                             <input type="email" class="form-control" id="email" name="email" value="{{ old('email') }}" placeholder="email@example.com">
+                            @error('email') <div class="text-danger">{{ $message }}</div> @enderror
                         </div>
                         <div class="mb-3">
                             <label for="password" class="form-label">Password</label>
@@ -41,7 +40,7 @@
                                 <button type="submit" class="btn btn-block btn-outline-primary">login</button>
                             </div>  
                             <div class="col-sm-6 col-md-6 d-grid">
-                                <a href="{{ route('welcome') }}" class="btn btn-block btn-outline-danger">cancel</a>
+                                <a href="{{ route('register') }}" class="btn btn-block btn-outline-success">register</a>
                             </div>
                         </div>
                         <!-- /. buttons -->
