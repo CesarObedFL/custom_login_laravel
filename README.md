@@ -38,12 +38,12 @@ Esta app es para la acreditación de la prueba
 
 ## _login_
 
-to login after seed the database:
+para ingresar al sistema despues de hacer las migraciones usa las siguientes credenciales:
 
 - user: test1@example.com
 - pass: secret
 
-or you can register a new user on the route: `/register`
+o puedes crear un nuevo usuario en la ruta: `/register`
 
 [Laravel]: <https://laravel.com/docs/8.x>
 [Bootstrap]: <https://getbootstrap.com/docs/5.0/getting-started/introduction/>
