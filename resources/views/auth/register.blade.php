@@ -45,14 +45,14 @@
                         <div class="mb-3">
                             <label for="password" class="form-label">Password</label>
                             <div class="input-group mb-3">
-                                <span class="input-group-text" id="password-addon" role="button" v-on:click="toggle_confirm_password">
-                                    <i v-if="!show_confirm_password" class="bi bi-eye"></i>
-                                    <i v-if="show_confirm_password" class="bi bi-eye-slash"></i>
+                                <span class="input-group-text" id="password-addon" role="button" v-on:click="toggle_password_confirmation">
+                                    <i v-if="!show_password_confirmation" class="bi bi-eye"></i>
+                                    <i v-if="show_password_confirmation" class="bi bi-eye-slash"></i>
                                 </span>
-                                <input class="form-control" id="confirm_password" name="confirm_password" placeholder="confirm password"
-                                :type="show_confirm_password ? 'text' : 'password'" aria-label="confirm password" aria-describedby="password-addon">
+                                <input class="form-control" id="password_confirmation" name="password_confirmation" placeholder="password confirmation"
+                                :type="show_password_confirmation ? 'text' : 'password'" aria-label="confirm password" aria-describedby="password-addon">
                             </div>
-                            @error('confirm_password') <div class="text-danger">{{ $message }}</div> @enderror
+                            @error('password_confirmation') <div class="text-danger">{{ $message }}</div> @enderror
                         </div>
                         <div class="mb-3">
                             <label for="rfc" class="form-label">RFC</label>

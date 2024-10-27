@@ -50,7 +50,7 @@ class AuthController extends Controller
             'name' => 'required|max:50',
             'email' => 'required|email|unique:users',
             'phone' => 'required|numeric|digits:10',
-            'password' => 'required|max:20',
+            'password' => 'required|confirmed|max:20',
             'rfc' => 'required',
             'notes' => 'required',
         ]);
