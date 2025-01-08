@@ -1,6 +1,4 @@
-# _Prueba Burben_
-
-Esta app es para la acreditación de la prueba
+# _USERS CRUD WITH CUSTOM LOGIN_
 
 # Tecnologías
 
