@@ -54,9 +54,9 @@
                             </div>
                             @error('password_confirmation') <div class="text-danger">{{ $message }}</div> @enderror
                         </div>
-                        <div class="mb-3">
+                        <div class="mb-3" id="validate_rfc_module">
                             <label for="rfc" class="form-label">RFC</label>
-                            <input type="text" class="form-control" id="rfc" name="rfc" value="{{ old('rfc') }}" placeholder="RFC">
+                            <input type="text" class="form-control" id="rfc" name="rfc" value="{{ old('rfc') }}" v-model="rfc_validated" v-on:keypress="validate_rfc" placeholder="RFC">
                             @error('rfc') <div class="text-danger">{{ $message }}</div> @enderror
                         </div>
                         <div class="mb-3">
@@ -83,5 +83,6 @@
     </div>
 
     <script type="module" src="{{ asset('js/scripts/register_app.js') }}"></script>
+    <script type="module" src="{{ asset('js/scripts/validate_rfc_app.js') }}"></script>
 
 @endsection
