@@ -28,11 +28,11 @@
 ## _instalación_
 
 - Crea la base de datos: burben_db
-    desde la línea de comandos de mariadb: `CREATE DATABASE burben_db;`
+    desde la línea de comandos de mariadb: `CREATE DATABASE users_crud_db;`
 - Crea el usuario de la base de datos: burben_db_user
-    desde la línea de comandos de mariadb: `CREATE USER 'burben_db_user'@'localhost' IDENTIFIED BY 'secret';`
+    desde la línea de comandos de mariadb: `CREATE USER 'users_crud_db_user'@'localhost' IDENTIFIED BY 'secret';`
 - Dale permisos al usuario creado en la base de datos:
-    from command line: `GRANT PRIVILEGE ON burben_db.* TO 'burben_db_user'@'localhost';`
+    from command line: `GRANT ALL PRIVILEGES ON burben_db.* TO 'users_crud_db_user'@'localhost';`
 
 1. Clona este repositorio con el comando `git clone repo_url`
 2. Corre el comando `composer install`
