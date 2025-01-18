@@ -27,9 +27,9 @@
 
 ## _instalación_
 
-- Crea la base de datos: burben_db
+- Crea la base de datos: users_crud_db
     desde la línea de comandos de mariadb: `CREATE DATABASE users_crud_db;`
-- Crea el usuario de la base de datos: burben_db_user
+- Crea el usuario de la base de datos: users_crud_db_user
     desde la línea de comandos de mariadb: `CREATE USER 'users_crud_db_user'@'localhost' IDENTIFIED BY 'secret';`
 - Dale permisos al usuario creado en la base de datos:
     from command line: `GRANT ALL PRIVILEGES ON users_crud_db.* TO 'users_crud_db_user'@'localhost';`
@@ -41,8 +41,8 @@
     - DB_CONNECTION=mysql
     - DB_HOST=127.0.0.1
     - DB_PORT=3306
-    - DB_DATABASE=burben_db
-    - DB_USERNAME=burben_db_user
+    - DB_DATABASE=users_crud_db
+    - DB_USERNAME=users_crud_db_user
     - DB_PASSWORD=secret
 5. Corre `php artisan key:generate` para generar la app key
 6. Corre `php artisan migrate --seed` para generar las migraciones y datos de prueba
